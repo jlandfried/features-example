@@ -1,0 +1,9 @@
+name = Features Example
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_example_field
+features[field_instance][] = node-features_example-field_example_field
+features[node][] = features_example

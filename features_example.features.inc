@@ -1,0 +1,23 @@
+<?php
+/**
+ * @file
+ * features_example.features.inc
+ */
+
+/**
+ * Implements hook_node_info().
+ */
+function features_example_node_info() {
+  $items = array(
+    'features_example' => array(
+      'name' => t('Features Example'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  drupal_alter('node_info', $items);
+  return $items;
+}
